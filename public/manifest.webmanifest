@@ -1,0 +1,10 @@
+{
+  "name": "Teman Makan",
+  "short_name": "Teman Makan",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6e5c4",
+  "theme_color": "#b92218",
+  "icons": []
+}
+
