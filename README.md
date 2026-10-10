@@ -28,7 +28,7 @@ dashboard.
 
 ## Local development
 
-Requirements: Node.js 22.12 or newer and pnpm 11.
+Requirements: Node.js 22.13 or newer and pnpm 11.
 
 ```bash
 pnpm install --frozen-lockfile
