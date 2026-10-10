@@ -20,6 +20,8 @@
   enter the courier name and airway bill number manually.
 - `SHIP-008` Changing a paid order's shipping service or price requires an
   explicit future specification; the MVP MUST not silently substitute it.
+- `SHIP-009` Local development MAY use deterministic mock destinations and
+  quotes. Mock shipping MUST be disabled when `ENVIRONMENT=production`.
 
 ## Acceptance criteria
 
@@ -28,4 +30,3 @@
 - Given a customer selects a quote, the created order stores the same shipping
   snapshot even if later provider rates change.
 - Given a paid order, staff can record its courier and airway bill number.
-

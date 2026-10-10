@@ -20,6 +20,9 @@
 - `NOTIF-008` Email and Web Push providers MUST be adapters. The initial email
   adapter uses Resend; Web Push uses VAPID.
 - `NOTIF-009` Unsubscribed or invalid push subscriptions MUST be deactivated.
+- `NOTIF-010` Local development MAY use a notification sink that records a
+  successful delivery without contacting email or push providers. The sink
+  MUST be disabled when `ENVIRONMENT=production`.
 
 ## Acceptance criteria
 
@@ -27,4 +30,3 @@
   notification.
 - Retrying the same queue message does not send a duplicate successful message.
 - Email-provider failure does not roll back the order status and is retryable.
-
